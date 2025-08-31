@@ -1,0 +1,33 @@
+baseURL = 'https://abxijth.github.io/task-13/'
+languageCode = 'en-us'
+title = 'Abhijith R Pillai'
+theme = 'PaperMod'
+
+[params]
+  author = "Abhijith R Pillai"
+  description = "Welcome to my portfolio!"
+  defaultTheme = "auto"
+
+  # Home Page Content
+  [params.homeInfoParams]
+    Title = "Myself, Abhijith R Pillai"
+    Content = """A developer passionate about building things.  
+Feel free to check out my [socials](/socials/)."""
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Introduction"
+    url = "/introduction/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Socials"
+    url = "/socials/"
+    weight = 3
+
