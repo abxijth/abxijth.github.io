@@ -4,7 +4,7 @@ date: 2025-08-31
 draft: false
 ---
 
-# Hey, I’m Abhijith 👋  
+# Hey, I’m Abhijith R Pillai 👋  
 
 I’m a first-year **CSE (AI)** student at **Amrita Vishwa Vidyapeetham**, passionate about **AI, WEB, Linux, open-source, and computing**. I enjoy exploring every corner of technology.
 
