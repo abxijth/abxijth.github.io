@@ -2,7 +2,6 @@
 title: "Diving Into Bandit Today"
 date: 2025-09-01
 categories: ["Cybersecurity", "Linux"]
-tags: ["Bandit", "Daily Progress", "AMFOSS"]
 draft: false
 ---
 
