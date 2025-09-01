@@ -15,7 +15,7 @@ Steps I followed:
 1. Installed Hugo on my Arch Linux system  
 2. Created a new site with `hugo new site my-portfolio`  
 3. Picked `PaperMod` theme that matched my style  
-4. Added my first pages ([About](/about), [Socials](/socials)  
+4. Added my first pages [About](/about),  [Socials](/socials)  
 
 ---
 
