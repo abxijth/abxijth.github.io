@@ -22,8 +22,8 @@ Feel free to check out my [socials](/socials/)."""
     weight = 1
 
   [[menu.main]]
-    name = "Introduction"
-    url = "/introduction/"
+    name = "About"
+    url = "/about/"
     weight = 2
 
   [[menu.main]]
