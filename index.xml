@@ -19,7 +19,7 @@
 &lt;li&gt;Installed Hugo on my Arch Linux system&lt;/li&gt;
 &lt;li&gt;Created a new site with &lt;code&gt;hugo new site my-portfolio&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Picked &lt;code&gt;PaperMod&lt;/code&gt; theme that matched my style&lt;/li&gt;
-&lt;li&gt;Added my first pages (&lt;code&gt;Introduction&lt;/code&gt;, &lt;code&gt;Socials&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Added my first pages (&lt;a href="https://abxijth.github.io/about"&gt;About&lt;/a&gt;, &lt;a href="https://abxijth.github.io/socials"&gt;Socials&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id="hosting-on-github-pages"&gt;Hosting on GitHub Pages&lt;/h2&gt;
