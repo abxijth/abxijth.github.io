@@ -1,6 +1,6 @@
 ---
 title: "Image2LaTeX"
-date: 2025-08-31
+date: 2025-11-05
 draft: false
 tags: ["flask", "javascript", "ml", "extension"]
 summary: "A browser extension that converts images into LaTeX code using a Flask backend."
