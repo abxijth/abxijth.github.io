@@ -11,8 +11,7 @@ theme = 'PaperMod'
   # Home Page Content
   [params.homeInfoParams]
     Title = "Myself, Abhijith R Pillai"
-    Content = """A developer passionate about building things.  
-Feel free to check out my [socials](/socials/)."""
+    Content = """Passionate about building, learning, and sharing."""
 
 [menu]
 
@@ -22,12 +21,18 @@ Feel free to check out my [socials](/socials/)."""
     weight = 1
 
   [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  
+
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Socials"
     url = "/socials/"
-    weight = 3
+    weight = 4
 
