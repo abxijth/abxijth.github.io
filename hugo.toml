@@ -15,7 +15,6 @@ theme = 'PaperMod'
   [params.homeInfoParams]
     Title = "Myself, Abhijith R Pillai"
     Content = """Passionate about building, learning, and sharing."""
-    showPostsOnHome = false
 
 [menu]
 
