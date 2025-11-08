@@ -24,17 +24,21 @@ git config user.email "Your e-mail here"
 ./configure.sh
 git start
 ```
+---
+
 ## master
 
-- **description**
+> - **description**
+>
+> The first exercise was to push the commit created after running the git start command. After initializing the repository, I ran git verify and successfully passed the very first challenge.
+>
+> - **commands used**
+> ```bash
+> git start
+> git verify
+> ```
 
-The first exercise was to push the commit created after running the git start command. After initializing the repository, I ran git verify and successfully passed the very first challenge.
-
-- **commands used**
-```bash
-git start
-git verify
-```
+---
 
 
 
