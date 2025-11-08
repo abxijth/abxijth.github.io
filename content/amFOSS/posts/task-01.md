@@ -38,6 +38,8 @@ git start
 > git verify
 > ```
 
+![master]( /images/master.png )
+
 ---
 
 
