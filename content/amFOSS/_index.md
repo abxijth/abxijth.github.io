@@ -1,5 +1,6 @@
-title: "amFOSS Journey"
-date: 2025-11-05
+---
+title: "amFOSS"
+date: 2025-11-08
 draft: false
 ---
 

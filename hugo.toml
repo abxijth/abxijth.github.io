@@ -29,8 +29,8 @@ theme = 'PaperMod'
     weight = 2
 
   [[menu.main]]
-    name = "Amfoss-Journey"
-    url = "/amfoss-journey/"
+    name = "amFOSS"
+    url = "/amFOSS/"
     weight = 3
 
   [[menu.main]]
