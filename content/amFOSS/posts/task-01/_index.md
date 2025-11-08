@@ -390,7 +390,7 @@ git start
 > - **description**
 >
 > While working on an issue, all changes were initially staged as a single commit, but they needed to be split into two.
-> Since the changes were in a single file, the task was to commit lines containing "Task 1" in the first commit and the remaining changes in a second commit, effectively splitting the work within the same file.
+> Since the changes were in a single file, the task was to commit lines containing **"Task 1"** in the first commit and the remaining changes in a second commit, effectively splitting the work within the same file. I used **git add -p** command to view and select from the hunk by which i could add only those lines which contained **"Task 1"** and commit it as the first commit then later i added the rest as the second commit.
 >  
 > - **commands used**
 > 
