@@ -15,8 +15,27 @@ Here’s a short walkthrough of what I did and what I learned.
 
 ---
 
-## ⚙️ Setup
+## ⚙️Setup
 ```bash
-git clone https://github.com/fracz/git-exercises.git
-cd git-exercises
-./setup.sh
+git clone https://gitexercises.fracz.com/git/exercises.git
+cd exercises
+git config user.name "Your name here"
+git config user.email "Your e-mail here"
+./configure.sh
+git start
+```
+## master
+
+- **description**
+
+The first exercise was to push the commit created after running the git start command. After initializing the repository, I ran git verify and successfully passed the very first challenge.
+
+- **commands used**
+```bash
+git start
+git verify
+```
+
+
+
+
