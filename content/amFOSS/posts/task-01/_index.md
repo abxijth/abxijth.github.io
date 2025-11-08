@@ -6,8 +6,6 @@ tags: ["amfoss-anveshan", "git", "version-control"]
 draft: false
 ---
 
-# 🧩 Git Exercises — Summary
-
 > Website: [gitexercises.fracz.com](https://gitexercises.fracz.com)
 
 A practical task to learn **Git inside out** — commits, branching, rebasing, and recovery.  
@@ -15,7 +13,7 @@ Here’s a short walkthrough of what I did and what I learned.
 
 ---
 
-## ⚙️Setup
+# ⚙️Setup
 ```bash
 git clone https://gitexercises.fracz.com/git/exercises.git
 cd exercises
@@ -24,6 +22,10 @@ git config user.email "Your e-mail here"
 ./configure.sh
 git start
 ```
+---
+
+# Sub - Tasks
+
 ---
 
 ## master  
@@ -106,9 +108,50 @@ git start
 > - **completion screenshot**
 > ![ignore-them.png](/images/ignore-them.png)
 
+---
 
+## chase-branch
 
+> - **description**
+>
+> So basically i was given two branches chase-branch and an escaped branch, this escaped branch had 2 more commit than chase-branch.
+> Therefore what i had t do was make this chase-branch point to the latest commits from escaped branch. 
+> So what i did was i merged the escaped branch into chase-branch from chase-branch to get the lates commits from escaped branch into chase-branch.
+>
+> - **commands used**
+> ```bash
+> git merge escaped
+> ```
+> - **completion  screenshot**
+> ![chase-branch.png](/images/chase-branch.png)
 
+---
+
+## merge-conflict
+
+> - **description**
+>
+> In this exercise, i was assigned to merge another-piece-of-work branch to the current branch but i got a merge conflict, so i had to manually resolve the merge conflict by editing the **equation.txt** file.
+> 
+>
+> - **commands-used** 
+> ```bash
+> git merge another-piece-of-work
+> nvim equation.txt (resolve conflict)
+> git add equation.txt
+> git commit -m "conflict resolved"
+> git verify
+> ```
+> - **completion  screenshot**
+> ![merge-conflict.png](/images/merge.png)
+
+---
+
+## save-your-work
+
+> - **description**
+>
+>
 
 
 
