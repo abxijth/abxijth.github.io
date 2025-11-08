@@ -46,7 +46,23 @@ git start
 
 > - **description**
 >
+> In this exercise, two files — A.txt and B.txt — were created in the project’s root directory. The goal was to stage and commit only one of them while leaving the other untracked.
+>Instead of pushing to a remote repository, the solution was verified locally using the git verify command.
 >
+> - **commands used**
+> ```bash
+> git add A.txt
+> git commit -m "Commit A.txt file"
+> ```
+> - **completion screenshot**
+>![commit-one-file](/images/commit-one-file.png)
+
+
+
+
+
+
+
 
 
 
