@@ -38,7 +38,7 @@ git start
 > git verify
 > ```
 > - **completion screenshot**
->![master.png](/images/master.png)
+> ![master.png](/images/master.png)
 
 ---
 
@@ -47,7 +47,7 @@ git start
 > - **description**
 >
 > In this exercise, two files — A.txt and B.txt — were created in the project’s root directory. The goal was to stage and commit only one of them while leaving the other untracked.
->Instead of pushing to a remote repository, the solution was verified locally using the git verify command.
+> Instead of pushing to a remote repository, the solution was verified locally using the git verify command.
 >
 > - **commands used**
 > ```bash
@@ -55,7 +55,58 @@ git start
 > git commit -m "Commit A.txt file"
 > ```
 > - **completion screenshot**
->![commit-one-file](/images/commit-one-file.png)
+> ![commit-one-file.png](/images/commit-one-file.png)
+
+---
+
+## commit-one-file-staged
+
+> - **description**
+> 
+> In this exercise, two files — A.txt and B.txt — were created in the project’s root directory and both were initially added to the staging area.
+> The challenge was to commit only one file while keeping the other staged but uncommitted.
+> The solution was then verified locally using the git verify command.
+>
+> - **commands used**
+> ```bash
+> git reset A.txt
+> git commit -m "Commit B.txt file"
+> ```
+> - **completion screenshot**
+> ![commit-one-file-staged.png](/images/commit-one-file-staged.png)
+
+---
+
+## ignore them
+
+> - **description**
+>
+> In this exercise, the goal was to configure Git to ignore unnecessary or generated files. This involved creating and committing a .gitignore file that excluded:
+>
+> - All files with the .exe extension
+>
+> - All files with the .o extension
+>
+> - All files with the .jar extension
+>
+> - The entire libraries/ directory
+>
+> These patterns ensured that build artifacts and external dependencies were not tracked in version control.
+> Sample files were already provided to test the configuration, and the setup was verified using the git verify command.
+>
+> - **commands used**
+> ```bash
+> echo *.o > .gitignore
+> echo *.exe >> .gitignore
+> echo *.jar >> .gitignore
+> echo libraries/ >> .gitignore
+> git add .gitignore
+> git commit -m "Ignore binary files"
+> ```
+> - **completion screenshot**
+> ![ignore-them.png](/images/ignore-them.png)
+
+
 
 
 
