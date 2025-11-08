@@ -13,7 +13,20 @@
 Instead of pushing to a remote repository, the solution was verified locally using the git verify command.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add A.txt
 </span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Commit A.txt file&#34;</span>
 </span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
-<img alt=commit-one-file loading=lazy src=/amfoss/posts/task-01/images/commit-one-file.png></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
+<img alt=commit-one-file.png loading=lazy src=/amfoss/posts/task-01/images/commit-one-file.png></li></ul></blockquote><hr><h2 id=commit-one-file-staged>commit-one-file-staged<a hidden class=anchor aria-hidden=true href=#commit-one-file-staged>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>In this exercise, two files — A.txt and B.txt — were created in the project’s root directory and both were initially added to the staging area.
+The challenge was to commit only one file while keeping the other staged but uncommitted.
+The solution was then verified locally using the git verify command.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git reset A.txt
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Commit B.txt file&#34;</span>
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=commit-one-file-staged.png loading=lazy src=/amfoss/posts/task-01/images/commit-one-file-staged.png></li></ul></blockquote><hr><h2 id=ignore-them>ignore them<a hidden class=anchor aria-hidden=true href=#ignore-them>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>In this exercise, the goal was to configure Git to ignore unnecessary or generated files. This involved creating and committing a .gitignore file that excluded:</p><ul><li><p>All files with the .exe extension</p></li><li><p>All files with the .o extension</p></li><li><p>All files with the .jar extension</p></li><li><p>The entire libraries/ directory</p></li></ul><p>These patterns ensured that build artifacts and external dependencies were not tracked in version control.
+Sample files were already provided to test the configuration, and the setup was verified using the git verify command.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>echo *.o &gt; .gitignore
+</span></span><span style=display:flex><span>echo *.exe &gt;&gt; .gitignore
+</span></span><span style=display:flex><span>echo *.jar &gt;&gt; .gitignore
+</span></span><span style=display:flex><span>echo libraries/ &gt;&gt; .gitignore
+</span></span><span style=display:flex><span>git add .gitignore
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Ignore binary files&#34;</span>
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=ignore-them.png loading=lazy src=/amfoss/posts/task-01/images/ignore-them.png></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
