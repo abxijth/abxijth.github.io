@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Abhijith R Pillai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post – Building and Hosting My Hugo Site</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;This is my very first post on this site — and what better way to start than by writing about &lt;strong&gt;how I created this blog itself&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;setting-up-hugo&#34;&gt;Setting up Hugo&lt;/h2&gt;&#xA;&lt;p&gt;I wanted a &lt;strong&gt;minimal, fast, and open-source&lt;/strong&gt; way to build a personal website. That’s why I chose &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; — a static site generator written in Go.&lt;/p&gt;&#xA;&lt;p&gt;Steps I followed:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Installed Hugo on my Arch Linux system&lt;/li&gt;&#xA;&lt;li&gt;Created a new site with &lt;code&gt;hugo new site my-portfolio&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Picked &lt;code&gt;PaperMod&lt;/code&gt; theme that matched my style&lt;/li&gt;&#xA;&lt;li&gt;Added my first pages (&lt;a href=&#34;http://localhost:1313/about&#34;&gt;About&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/socials&#34;&gt;Socials&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;hosting-on-github-pages&#34;&gt;Hosting on GitHub Pages&lt;/h2&gt;&#xA;&lt;p&gt;Instead of paid hosting, I decided to use &lt;strong&gt;GitHub Pages&lt;/strong&gt;, since it’s free and works seamlessly with Hugo.&lt;/p&gt;</description>
+      <title>AI Project</title>
+      <link>http://localhost:1313/posts/placeholder/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/placeholder/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

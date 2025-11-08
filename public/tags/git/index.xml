@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Abhijith R Pillai</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on Abhijith R Pillai</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TASK 01: GIT</title>
+      <link>http://localhost:1313/amfoss/posts/task-01/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/amfoss/posts/task-01/</guid>
+      <description>Git exercises is a great platform to help you learn and practice Git and discover its features you might not have been aware of. Additionally, learn git branching provides an interactive way to learn Git through graphs, offering visual and hands-on practice with branching, merging, rebasing, and other Git concepts.</description>
+    </item>
+  </channel>
+</rss>
