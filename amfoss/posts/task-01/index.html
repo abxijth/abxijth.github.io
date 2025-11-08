@@ -36,7 +36,46 @@ So what i did was i merged the escaped branch into chase-branch from chase-branc
 </span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;conflict resolved&#34;</span>
 </span></span><span style=display:flex><span>git verify
 </span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
-<img alt=merge-conflict.png loading=lazy src=/images/merge.png></li></ul></blockquote><hr><h2 id=save-your-work>save-your-work<a hidden class=anchor aria-hidden=true href=#save-your-work>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
+<img alt=merge-conflict.png loading=lazy src=/amfoss/posts/task-01/images/merge-conflict.png></li></ul></blockquote><hr><h2 id=save-your-work>save-your-work<a hidden class=anchor aria-hidden=true href=#save-your-work>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>While working on an ongoing issue, a bug was discovered that required an immediate fix.
+Since my working area was messy, I stashed my changes using <strong>git stash</strong>, fixed the bug in bug.txt, and committed the bugfix.
+Then I restored my work using <strong>git stash pop</strong>, finished it by adding: Finally, finished it! and committed the completed work.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git stash
+</span></span><span style=display:flex><span>git add bug.txt
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;bug fixed&#34;</span>
+</span></span><span style=display:flex><span>git stash apply
+</span></span><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Finish my work&#34;</span>
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=save-your-work.png loading=lazy src=/amfoss/posts/task-01/images/save-your-work.png></li></ul></blockquote><hr><h2 id=change-branch-history>change-branch-history<a hidden class=anchor aria-hidden=true href=#change-branch-history>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>While working on an issue, I was asked to fix a recent bug.
+I temporarily set aside my ongoing work, fixed the bug on a separate branch, and then <strong>reordered the commits</strong> using <strong>git rebase</strong> so the bugfix appeared before continuing my main task.
+This ensured the repository reflected the bugfix first while preserving my original work.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git rebase hot-bugfix
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=change-branch-history.png loading=lazy src=/amfoss/posts/task-01/images/change-branch-history.png></li></ul></blockquote><hr><h2 id=remove-ignored>remove-ignored<a hidden class=anchor aria-hidden=true href=#remove-ignored>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>The file ignored.txt was already tracked in Git, even though a .gitignore rule was added to ignore it.
+The goal was to stop tracking this file so that future changes would no longer appear in version control, without deleting it from the working directory.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git rm ignored.txt
+</span></span><span style=display:flex><span>git commit -am <span style=color:#e6db74>&#34;remove ignored.txt which should be ignored&#34;</span>
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=remove-ignored.png loading=lazy src=/amfoss/posts/task-01/images/remove-ignored.png></li></ul></blockquote><hr><h2 id=case-sensitive-filename>case-sensitive-filename<a hidden class=anchor aria-hidden=true href=#case-sensitive-filename>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>After committing File.txt, I realized the filename should be all lowercase (file.txt).
+To fix this, I first soft-reset the last commit to move it back to the staging area, then renamed the file to file.txt, added it back to the staging area, and committed the change again.
+This preserved the content while correcting the filename in Git history.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git reset --soft HEAD~1 
+</span></span><span style=display:flex><span>git restore --staged File.txt
+</span></span><span style=display:flex><span>mv File.txt file.txt
+</span></span><span style=display:flex><span>git add file.txt
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;file.txt&#34;</span>
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=case-sensitive-filename.png loading=lazy src=/amfoss/posts/task-01/images/case-sensitive-filename.png></li></ul></blockquote><hr><h2 id=fix-typo>fix-typo<a hidden class=anchor aria-hidden=true href=#fix-typo>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>file.txt was committed, but it contained a typo (wordl instead of world).
+The task was to edit the previous commit so the typo was corrected, and update the commit message accordingly, making it appear as if the file had been correct from the start.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>nvim file.txt
+</span></span><span style=display:flex><span>git add file.txt
+</span></span><span style=display:flex><span>git commit --amend
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=fix-typo.png loading=lazy src=/amfoss/posts/task-01/images/fix-typo.png></li></ul></blockquote><hr><h2 id=forge-date>forge-date<a hidden class=anchor aria-hidden=true href=#forge-date>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>The work was committed later than intended.
+The task was to change the date of the last commit, making it appear as if it had been committed in 1987.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git log 
+</span></span><span style=display:flex><span>git commit --amend --no-edit --date<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Sat Nov 8 22:50:57 1987 +0530&#34;</span>
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=forge-date.png loading=lazy src=/amfoss/posts/task-01/images/forge-date.png></li></ul></blockquote><hr><h2 id=fix-old-typo>fix old typo<a hidden class=anchor aria-hidden=true href=#fix-old-typo>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
