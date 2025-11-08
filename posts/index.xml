@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Abhijith R Pillai</title><link>https://abxijth.github.io/posts/</link><description>Recent content in Posts on Abhijith R Pillai</description><generator>Hugo -- 0.149.0</generator><language>en-us</language><lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abxijth.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Lorem Ipsum</title><link>https://abxijth.github.io/posts/placeholder/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://abxijth.github.io/posts/placeholder/</guid><description>placeholder</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Abhijith R Pillai</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Abhijith R Pillai</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Project</title>
+      <link>http://localhost:1313/posts/placeholder/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/placeholder/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
