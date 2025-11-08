@@ -347,11 +347,70 @@ git start
 
 > - **description**
 >
+> Two commits were created while working on an issue, each introducing very small changes.
+> The task was to squash the last two commits into a single commit to keep the project history clean.
+> The git log -2 command was used to inspect the last two commits before performing the squash.
+>
 > - **commands used**
 >
 > ```bash
-> 
+> git log -2 
+> git rebase -i HEAD^^
+> git verify
 > ```
+> - **completion screenshot**
+> ![too-many-commits.png](/images/too-many-commits.png)
+
+---
+
+## executable
+
+> - **description**
 >
+> A simple bash script (script.sh) was created, but it lacked execute permissions on Unix, preventing it from being run with ./script.sh.
+> The task was to add the executable bit for script.sh in Git history so that it could be executed without manually running chmod +x.
 >
+> - **commands used**
 >
+> ```bash
+> git log 
+> git reset --soft HEAD~1 
+> git restore --staged script.sh 
+> git add --chmod=+x script.sh 
+> git commit -m "create script.sh" 
+> git verify
+> ```
+> - **completion screenshot**
+> ![executable.png](/images/executable.png)
+
+---
+
+## commit-parts
+
+> - **description**
+>
+> While working on an issue, all changes were initially staged as a single commit, but they needed to be split into two.
+> Since the changes were in a single file, the task was to commit lines containing "Task 1" in the first commit and the remaining changes in a second commit, effectively splitting the work within the same file.
+>  
+> - **commands used**
+> 
+> ```bash
+> git add -p 
+> git commit -m "first commit" 
+> git add file.txt
+> git commit -m "second commit"
+> git verify
+> ```
+> - **completion screenshot**
+> ![commit-parts.png](/images/commit-parts.png)
+
+---
+
+## pick-your-features
+
+> - **description**
+
+
+
+
+
