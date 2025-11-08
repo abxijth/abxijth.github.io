@@ -37,11 +37,16 @@ git start
 > git start
 > git verify
 > ```
-
-![test](/images/master.png)
+> - **completion screenshot**
+>![master.png](/images/master.png)
 
 ---
 
+## commit-one-file
+
+> - **description**
+>
+>
 
 
 
