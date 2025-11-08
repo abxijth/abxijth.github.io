@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Python on Abhijith R Pillai</title><link>https://abxijth.github.io/categories/python/</link><description>Recent content in Python on Abhijith R Pillai</description><generator>Hugo -- 0.149.0</generator><language>en-us</language><lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abxijth.github.io/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Building My First Quiz Game with an API</title><link>https://abxijth.github.io/projects/posts/quiz-game/</link><pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate><guid>https://abxijth.github.io/projects/posts/quiz-game/</guid><description>&lt;p&gt;As part of the &lt;strong&gt;AMFOSS Club Praveshan tasks&lt;/strong&gt;, today I built a &lt;strong&gt;command-line quiz game&lt;/strong&gt; powered by the &lt;strong&gt;Open Trivia Database API&lt;/strong&gt;. At first, it looked overwhelming (so many API parameters and JSON fields), but step by step, I made it work.&lt;/p&gt;
-&lt;p&gt;I learned how to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fetch categories and questions dynamically from the API.&lt;/li&gt;
-&lt;li&gt;Parse tricky JSON fields like &lt;code&gt;question&lt;/code&gt;, &lt;code&gt;correct_answer&lt;/code&gt;, and &lt;code&gt;incorrect_answers&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;timer with threads&lt;/strong&gt;, so the quiz doesn’t freeze while waiting for input.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;os._exit(0)&lt;/code&gt; at the end to cleanly exit the game when it’s done.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;One issue I ran into was the &lt;strong&gt;countdown timer and user input clashing&lt;/strong&gt; — if you didn’t type an answer, the quiz would skip ahead without giving you space to respond. I solved this with &lt;strong&gt;threading&lt;/strong&gt;, running the timer in the background while still letting the player type.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Abhijith R Pillai</title>
+    <link>http://localhost:1313/categories/python/</link>
+    <description>Recent content in Python on Abhijith R Pillai</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building My First Quiz Game with an API</title>
+      <link>http://localhost:1313/projects/posts/quiz-game/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/posts/quiz-game/</guid>
+      <description>&lt;p&gt;As part of the &lt;strong&gt;AMFOSS Club Praveshan tasks&lt;/strong&gt;, today I built a &lt;strong&gt;command-line quiz game&lt;/strong&gt; powered by the &lt;strong&gt;Open Trivia Database API&lt;/strong&gt;. At first, it looked overwhelming (so many API parameters and JSON fields), but step by step, I made it work.&lt;/p&gt;&#xA;&lt;p&gt;I learned how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fetch categories and questions dynamically from the API.&lt;/li&gt;&#xA;&lt;li&gt;Parse tricky JSON fields like &lt;code&gt;question&lt;/code&gt;, &lt;code&gt;correct_answer&lt;/code&gt;, and &lt;code&gt;incorrect_answers&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Add a &lt;strong&gt;timer with threads&lt;/strong&gt;, so the quiz doesn’t freeze while waiting for input.&lt;/li&gt;&#xA;&lt;li&gt;Use &lt;code&gt;os._exit(0)&lt;/code&gt; at the end to cleanly exit the game when it’s done.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;One issue I ran into was the &lt;strong&gt;countdown timer and user input clashing&lt;/strong&gt; — if you didn’t type an answer, the quiz would skip ahead without giving you space to respond. I solved this with &lt;strong&gt;threading&lt;/strong&gt;, running the timer in the background while still letting the player type.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

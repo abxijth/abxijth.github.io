@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Linux on Abhijith R Pillai</title><link>https://abxijth.github.io/categories/linux/</link><description>Recent content in Linux on Abhijith R Pillai</description><generator>Hugo -- 0.149.0</generator><language>en-us</language><lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abxijth.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Diving Into Bandit Today</title><link>https://abxijth.github.io/projects/posts/diving-into-bandit-today/</link><pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate><guid>https://abxijth.github.io/projects/posts/diving-into-bandit-today/</guid><description>&lt;p&gt;Today I spent some time exploring &lt;strong&gt;OverTheWire Bandit&lt;/strong&gt; as part of the &lt;strong&gt;AMFOSS Club Praveshan tasks&lt;/strong&gt;. Honestly, it was a mix of frustration and excitement—trying to figure out tricky file locations, hidden names, and weird encodings really makes you feel like a hacker in training.&lt;/p&gt;
-&lt;p&gt;I managed to complete a few levels and got better at navigating the Linux terminal. I found myself experimenting with commands like &lt;code&gt;grep&lt;/code&gt; and &lt;code&gt;strings&lt;/code&gt;, learning little tricks along the way. Taking screenshots of passwords helped me keep track, but the real win was figuring things out step by step.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Abhijith R Pillai</title>
+    <link>http://localhost:1313/categories/linux/</link>
+    <description>Recent content in Linux on Abhijith R Pillai</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diving Into Bandit Today</title>
+      <link>http://localhost:1313/projects/posts/diving-into-bandit-today/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/posts/diving-into-bandit-today/</guid>
+      <description>&lt;p&gt;Today I spent some time exploring &lt;strong&gt;OverTheWire Bandit&lt;/strong&gt; as part of the &lt;strong&gt;AMFOSS Club Praveshan tasks&lt;/strong&gt;. Honestly, it was a mix of frustration and excitement—trying to figure out tricky file locations, hidden names, and weird encodings really makes you feel like a hacker in training.&lt;/p&gt;&#xA;&lt;p&gt;I managed to complete a few levels and got better at navigating the Linux terminal. I found myself experimenting with commands like &lt;code&gt;grep&lt;/code&gt; and &lt;code&gt;strings&lt;/code&gt;, learning little tricks along the way. Taking screenshots of passwords helped me keep track, but the real win was figuring things out step by step.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
