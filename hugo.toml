@@ -7,6 +7,7 @@ theme = 'PaperMod'
   author = "Abhijith R Pillai"
   description = "Welcome to my portfolio!"
   defaultTheme = "auto"
+  favicon = "logo.ico"
 
   # Home Page Content
   [params.homeInfoParams]
