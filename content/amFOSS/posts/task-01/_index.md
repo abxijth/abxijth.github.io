@@ -35,6 +35,7 @@ git start
 > The first exercise was to push the commit created after running the git start command. After initializing the repository, I ran git verify and successfully passed the very first challenge.
 >
 > - **commands used**
+>
 > ```bash
 > git start
 > git verify
@@ -52,6 +53,7 @@ git start
 > Instead of pushing to a remote repository, the solution was verified locally using the git verify command.
 >
 > - **commands used**
+>
 > ```bash
 > git add A.txt
 > git commit -m "Commit A.txt file"
@@ -70,6 +72,7 @@ git start
 > The solution was then verified locally using the git verify command.
 >
 > - **commands used**
+>
 > ```bash
 > git reset A.txt
 > git commit -m "Commit B.txt file"
@@ -97,6 +100,7 @@ git start
 > Sample files were already provided to test the configuration, and the setup was verified using the git verify command.
 >
 > - **commands used**
+>
 > ```bash
 > echo *.o > .gitignore
 > echo *.exe >> .gitignore
@@ -119,6 +123,7 @@ git start
 > So what i did was i merged the escaped branch into chase-branch from chase-branch to get the lates commits from escaped branch into chase-branch.
 >
 > - **commands used**
+>
 > ```bash
 > git merge escaped
 > ```
@@ -135,6 +140,7 @@ git start
 > 
 >
 > - **commands-used** 
+>
 > ```bash
 > git merge another-piece-of-work
 > nvim equation.txt (resolve conflict)
@@ -143,7 +149,7 @@ git start
 > git verify
 > ```
 > - **completion  screenshot**
-> ![merge-conflict.png](/images/merge.png)
+> ![merge-conflict.png](/images/merge-conflict.png)
 
 ---
 
@@ -151,8 +157,131 @@ git start
 
 > - **description**
 >
->
+> While working on an ongoing issue, a bug was discovered that required an immediate fix.
+> Since my working area was messy, I stashed my changes using **git stash**, fixed the bug in bug.txt, and committed the bugfix.
+> Then I restored my work using **git stash pop**, finished it by adding: Finally, finished it! and committed the completed work.
+> 
+> - **commands used**
+> 
+> ```bash
+> git stash
+> git add bug.txt
+> git commit -m "bug fixed"
+> git stash apply
+> git add .
+> git commit -m "Finish my work"
+> git verify
+> ```
+> - **completion screenshot**
+> ![save-your-work.png](/images/save-your-work.png)
 
+---
+
+## change-branch-history
+
+> - **description**
+>
+> While working on an issue, I was asked to fix a recent bug.
+> I temporarily set aside my ongoing work, fixed the bug on a separate branch, and then **reordered the commits** using **git rebase** so the bugfix appeared before continuing my main task.
+> This ensured the repository reflected the bugfix first while preserving my original work.
+>
+> - **commands used**
+>
+> ```bash
+> git rebase hot-bugfix
+> git verify
+> ```
+> - **completion screenshot**
+> ![change-branch-history.png](/images/change-branch-history.png)
+
+---
+
+## remove-ignored
+
+> - **description**
+> 
+> The file ignored.txt was already tracked in Git, even though a .gitignore rule was added to ignore it.
+> The goal was to stop tracking this file so that future changes would no longer appear in version control, without deleting it from the working directory.
+>
+> - **commands used**
+>
+> ```bash
+> git rm ignored.txt
+> git commit -am "remove ignored.txt which should be ignored"
+> ```
+> - **completion screenshot**
+> ![remove-ignored.png](/images/remove-ignored.png)
+
+---
+
+## case-sensitive-filename
+
+> - **description**
+> 
+> After committing File.txt, I realized the filename should be all lowercase (file.txt).
+> To fix this, I first soft-reset the last commit to move it back to the staging area, then renamed the file to file.txt, added it back to the staging area, and committed the change again.
+> This preserved the content while correcting the filename in Git history.
+>
+> - **commands used**
+>
+> ```bash
+> git reset --soft HEAD~1 
+> git restore --staged File.txt
+> mv File.txt file.txt
+> git add file.txt
+> git commit -m "file.txt"
+> git verify
+>```
+> - **completion screenshot**
+> ![case-sensitive-filename.png](/images/case-sensitive-filename.png)
+
+---
+
+## fix-typo
+
+> - **description**
+>
+> file.txt was committed, but it contained a typo (wordl instead of world).
+> The task was to edit the previous commit so the typo was corrected, and update the commit message accordingly, making it appear as if the file had been correct from the start.
+>
+> - **commands used**
+>
+> ```bash
+> nvim file.txt
+> git add file.txt
+> git commit --amend
+> git verify
+> ```
+> - **completion screenshot**
+> ![fix-typo.png](/images/fix-typo.png)
+
+---
+
+## forge-date
+
+> - **description**
+>
+> The work was committed later than intended.
+> The task was to change the date of the last commit, making it appear as if it had been committed in 1987.
+>
+> - **commands used**
+>
+>```bash
+> git log 
+> git commit --amend --no-edit --date="Sat Nov 8 22:50:57 1987 +0530"
+> git verify
+> ```
+> - **completion screenshot**
+> ![forge-date.png](/images/forge-date.png)
+
+---
+
+## fix old typo
+
+> - **description**
+>
+>
+> 
 
 
 
