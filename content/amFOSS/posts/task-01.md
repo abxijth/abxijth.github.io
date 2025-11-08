@@ -26,7 +26,7 @@ git start
 ```
 ---
 
-<u> ## master </u>
+## master  
 
 > - **description**
 >
