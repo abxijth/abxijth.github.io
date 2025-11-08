@@ -38,7 +38,7 @@ git start
 > git verify
 > ```
 
-![master]( /images/master.png )
+![master](/posts/images/master.png)
 
 ---
 
