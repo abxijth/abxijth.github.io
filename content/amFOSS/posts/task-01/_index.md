@@ -276,16 +276,82 @@ git start
 
 ---
 
-## fix old typo
+## fix-old-typo
+
+> - **description**
+> 
+> file.txt contains a typographic error (wordl instead of world).
+> Since another commit was made on top, a simple git commit --amend is not sufficient.
+> The task was to fix the typo by amending the commit in history, while also updating the commit message appropriately.
+> 
+> - **commands used**
+>
+> ```bash
+> git rebase -i 
+> nvim file.txt
+> git add file.txt
+> git rebase --continue
+> nvim file.txt
+> git add file.txt
+> git rebase --continue
+> git verify fix-old-typo
+>```
+> - **completion screenshot**
+> ![fix-old-typo.png](/images/fix-old-typo.png)
+
+---
+
+## commit-lost
+
+> - **description**
+> 
+> A commit containing important work was amended, but the wrong changes were accidentally committed.
+> Since the original version is no longer in the visible history, the task was to locate the first version of the commit in the repository, force the commit-lost branch to point to it, and verify the solution.
+>
+> - **commands used**
+>
+> ```bash
+> git reflog
+> git reset --hard 81355a3
+> git verify
+> ```
+> - **completion screenshot**
+> ![commit-lost.png](/images/commmit-lost.png)
+
+---
+
+## split-commit
+
+> - **description**
+> 
+> Both first.txt and second.txt were committed together in a single commit by mistake.
+> The task was to split the commit so that first.txt is in the first commit and second.txt is in a separate second commit.
+> So i used git reset command to go to the stage where both files were not added and not committed.
+>
+> - **commands used**
+>
+> ```bash
+> git reset HEAD^
+> git add first.txt
+> git commit -m "first.txt"
+> git add second.txt
+> git commit -m "second.txt"
+> git verify
+> ```
+> - **completion screenshot**
+> ![split-commit.png](/images/split-commit.png)
+
+---
+
+## too-many-commits
 
 > - **description**
 >
+> - **commands used**
 >
+> ```bash
 > 
-
-
-
-
-
-
-
+> ```
+>
+>
+>
