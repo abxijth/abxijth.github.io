@@ -100,7 +100,28 @@ So i used git reset command to go to the stage where both files were not added a
 </span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;second.txt&#34;</span>
 </span></span><span style=display:flex><span>git verify
 </span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
-<img alt=split-commit.png loading=lazy src=/amfoss/posts/task-01/images/split-commit.png></li></ul></blockquote><hr><h2 id=too-many-commits>too-many-commits<a hidden class=anchor aria-hidden=true href=#too-many-commits>#</a></h2><blockquote><ul><li><p><strong>description</strong></p></li><li><p><strong>commands used</strong></p></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash></code></pre></div></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
+<img alt=split-commit.png loading=lazy src=/amfoss/posts/task-01/images/split-commit.png></li></ul></blockquote><hr><h2 id=too-many-commits>too-many-commits<a hidden class=anchor aria-hidden=true href=#too-many-commits>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>Two commits were created while working on an issue, each introducing very small changes.
+The task was to squash the last two commits into a single commit to keep the project history clean.
+The git log -2 command was used to inspect the last two commits before performing the squash.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git log -2 
+</span></span><span style=display:flex><span>git rebase -i HEAD^^
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=too-many-commits.png loading=lazy src=/amfoss/posts/task-01/images/too-many-commits.png></li></ul></blockquote><hr><h2 id=executable>executable<a hidden class=anchor aria-hidden=true href=#executable>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>A simple bash script (script.sh) was created, but it lacked execute permissions on Unix, preventing it from being run with ./script.sh.
+The task was to add the executable bit for script.sh in Git history so that it could be executed without manually running chmod +x.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git log 
+</span></span><span style=display:flex><span>git reset --soft HEAD~1 
+</span></span><span style=display:flex><span>git restore --staged script.sh 
+</span></span><span style=display:flex><span>git add --chmod<span style=color:#f92672>=</span>+x script.sh 
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;create script.sh&#34;</span> 
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=executable.png loading=lazy src=/amfoss/posts/task-01/images/executable.png></li></ul></blockquote><hr><h2 id=commit-parts>commit-parts<a hidden class=anchor aria-hidden=true href=#commit-parts>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>While working on an issue, all changes were initially staged as a single commit, but they needed to be split into two.
+Since the changes were in a single file, the task was to commit lines containing &ldquo;Task 1&rdquo; in the first commit and the remaining changes in a second commit, effectively splitting the work within the same file.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add -p 
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;first commit&#34;</span> 
+</span></span><span style=display:flex><span>git add file.txt
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;second commit&#34;</span>
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=commit-parts.png loading=lazy src=/amfoss/posts/task-01/images/commit-parts.png></li></ul></blockquote><hr><h2 id=pick-your-features>pick-your-features<a hidden class=anchor aria-hidden=true href=#pick-your-features>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
