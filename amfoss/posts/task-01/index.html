@@ -91,7 +91,7 @@ Since the original version is no longer in the visible history, the task was to 
 </span></span><span style=display:flex><span>git reset --hard 81355a3
 </span></span><span style=display:flex><span>git verify
 </span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
-<img alt=commit-lost.png loading=lazy src=/images/commmit-lost.png></li></ul></blockquote><hr><h2 id=split-commit>split-commit<a hidden class=anchor aria-hidden=true href=#split-commit>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>Both first.txt and second.txt were committed together in a single commit by mistake.
+<img alt=commit-lost.png loading=lazy src=/amfoss/posts/task-01/images/commit-lost.png></li></ul></blockquote><hr><h2 id=split-commit>split-commit<a hidden class=anchor aria-hidden=true href=#split-commit>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>Both first.txt and second.txt were committed together in a single commit by mistake.
 The task was to split the commit so that first.txt is in the first commit and second.txt is in a separate second commit.
 So i used git reset command to go to the stage where both files were not added and not committed.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git reset HEAD^
 </span></span><span style=display:flex><span>git add first.txt
@@ -121,7 +121,27 @@ Since the changes were in a single file, the task was to commit lines containing
 </span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;second commit&#34;</span>
 </span></span><span style=display:flex><span>git verify
 </span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
-<img alt=commit-parts.png loading=lazy src=/amfoss/posts/task-01/images/commit-parts.png></li></ul></blockquote><hr><h2 id=pick-your-features>pick-your-features<a hidden class=anchor aria-hidden=true href=#pick-your-features>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
+<img alt=commit-parts.png loading=lazy src=/amfoss/posts/task-01/images/commit-parts.png></li></ul></blockquote><hr><h2 id=pick-your-features>pick-your-features<a hidden class=anchor aria-hidden=true href=#pick-your-features>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>In this exercise, i had pick-your-features branch as the head branch and i had 3 separate feature branches a, b, c. so what i wanted was to have all these features as single commit in my pick-your-features branch. So i used the combination of merge and squash commands to do the same.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git merge --squash feature-a 
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;feature-a&#34;</span> 
+</span></span><span style=display:flex><span>git merge --squash feature-b 
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;feature-b&#34;</span>
+</span></span><span style=display:flex><span>git merge --squash feature-c 
+</span></span><span style=display:flex><span>nvim program.txt <span style=color:#f92672>(</span>resolve merge conflict<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>git add program.txt 
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;all three features committed&#34;</span> 
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=pick-your-features.png loading=lazy src=/amfoss/posts/task-01/images/pick-your-features.png></li></ul></blockquote><hr><h2 id=rebase-complex>rebase-complex<a hidden class=anchor aria-hidden=true href=#rebase-complex>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>The goal was to rebase only the bugfix commits (H and I) from the rebase-complex branch onto your-master, excluding the work from issue-555.
+This was done using <code>git rebase --onto</code> which allowed me to move a branch to a different place.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git rebase issue-555 --onto your-master
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=rebase-complex.png loading=lazy src=/amfoss/posts/task-01/images/rebase-complex.png></li></ul></blockquote><hr><h2 id=invalid-order>invalid-order<a hidden class=anchor aria-hidden=true href=#invalid-order>#</a></h2><blockquote><ul><li><strong>description</strong></li></ul><p>I had two commits in the wrong order and needed to switch them.
+I just used interactive rebase to reorder the commits and fix the history.</p><ul><li><strong>commands used</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git log -2 
+</span></span><span style=display:flex><span>git rebase -i <span style=color:#f92672>(</span>swapped commit id<span style=color:#960050;background-color:#1e0010>&#39;</span>s<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>git verify
+</span></span></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=invalid-order.png loading=lazy src=/amfoss/posts/task-01/images/invalid-order.png></li></ul></blockquote><hr><h2 id=find-swearwords>find-swearwords<a hidden class=anchor aria-hidden=true href=#find-swearwords>#</a></h2><blockquote><ul><li><p><strong>description</strong></p></li><li><p><strong>commands used</strong></p></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash></code></pre></div><ul><li><strong>completion screenshot</strong>
+<img alt=find-swearwords.png loading=lazy src=/amfoss/posts/task-01/images/find-swearwords.png></li></ul></blockquote></div></main><footer class=footer><span>&copy; 2025 <a href=https://abxijth.github.io/>Abhijith R Pillai</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
