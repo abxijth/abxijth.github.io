@@ -471,8 +471,11 @@ git start
 
 > - **description**
 >
+>  So, the job was to go through the project's whole history and swap out the word "shit" for "flower" in two files, words.txt and list.txt. It was basically a cleanup to get rid of that bad word everywhere it showed up, even in old versions of the files.
 > 
 > - **commands used**
+> 
+> 
 > 
 > ```bash
 >
