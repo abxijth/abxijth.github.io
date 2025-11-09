@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-A collection of things I’ve built and explored — each project taught me something new.
+My journey - amFOSS Anveshan Task's
 
 
 

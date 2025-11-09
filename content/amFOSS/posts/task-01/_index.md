@@ -1,5 +1,5 @@
 ---
-title: "Task 01 — Git Exercises"
+title: "Task 01 — GIT"
 date: 2025-11-08
 description: "A concise summary of all Git exercises I solved, with key commands and takeaways."
 tags: ["amfoss-anveshan", "git", "version-control"]
