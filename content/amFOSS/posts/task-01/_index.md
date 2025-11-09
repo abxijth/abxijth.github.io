@@ -481,7 +481,21 @@ git start
 > - **completion screenshot**
 > ![find-swearwords.png](/images/find-swearwords.png) 
 
+---
 
+## find-bug
+
+> - **description**
+>
+>
+> - **commands used**
+>
+> ```bash
+>
+>
+>```
+> - **completion screenshot**
+> ![find-bug.png](/images/find-bug.png)
 
 
 
