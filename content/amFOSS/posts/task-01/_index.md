@@ -316,7 +316,7 @@ git start
 > git verify
 > ```
 > - **completion screenshot**
-> ![commit-lost.png](/images/commmit-lost.png)
+> ![commit-lost.png](/images/commit-lost.png)
 
 ---
 
@@ -409,6 +409,77 @@ git start
 ## pick-your-features
 
 > - **description**
+> 
+> In this exercise, i had pick-your-features branch as the head branch and i had 3 separate feature branches a, b, c. so what i wanted was to have all these features as single commit in my pick-your-features branch. So i used the combination of merge and squash commands to do the same.
+>
+>  - **commands used**
+>
+> ```bash
+> git merge --squash feature-a 
+> git commit -m "feature-a" 
+> git merge --squash feature-b 
+> git commit -m "feature-b"
+> git merge --squash feature-c 
+> nvim program.txt (resolve merge conflict)
+> git add program.txt 
+> git commit -m "all three features committed" 
+> git verify
+> ```
+> - **completion screenshot**
+> ![pick-your-features.png](/images/pick-your-features.png)
+
+---
+
+## rebase-complex
+
+> - **description**
+> 
+> The goal was to rebase only the bugfix commits (H and I) from the rebase-complex branch onto your-master, excluding the work from issue-555.
+> This was done using ```git rebase --onto``` which allowed me to move a branch to a different place. 
+>
+> - **commands used**
+> 
+> ```bash
+> git rebase issue-555 --onto your-master
+> git verify
+> ```
+> - **completion  screenshot**
+> ![rebase-complex.png](/images/rebase-complex.png) 
+
+---
+
+## invalid-order 
+
+> - **description**
+>
+> I had two commits in the wrong order and needed to switch them.
+> I just used interactive rebase to reorder the commits and fix the history.
+> 
+> - **commands used**
+> 
+> ```bash
+> git log -2 
+> git rebase -i (swapped commit id's)
+> git verify
+> ```
+> - **completion screenshot**
+> ![invalid-order.png](/images/invalid-order.png) 
+
+---
+
+## find-swearwords
+
+> - **description**
+>
+> 
+> - **commands used**
+> 
+> ```bash
+>
+>
+> ```
+> - **completion screenshot**
+> ![find-swearwords.png](/images/find-swearwords.png) 
 
 
 
