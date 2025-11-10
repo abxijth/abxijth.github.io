@@ -13,7 +13,8 @@ Here’s a short walkthrough of what I did and what I learned.
 
 ---
 
-# ⚙️Setup
+# Setup
+
 ```bash
 git clone https://gitexercises.fracz.com/git/exercises.git
 cd exercises
@@ -459,7 +460,7 @@ git start
 > 
 > ```bash
 > git log -2 
-> git rebase -i (swapped commit id's)
+> git rebase -i (swapped commit ids)
 > git verify
 > ```
 > - **completion screenshot**
