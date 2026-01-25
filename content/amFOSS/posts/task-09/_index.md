@@ -6,8 +6,6 @@ tags: ["amfoss-anveshan"]
 draft: false
 ---
 
-Final Task — Journey Through the Anveshan Track
-
 ## Introduction
 
 This repository marks the final milestone of my journey through the Anveshan Track. What started as a series of individual technical tasks gradually became a holistic learning experience, one that strengthened not only my technical skills, but also my approach to problem-solving, design thinking, and self-discipline.
