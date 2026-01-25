@@ -28,4 +28,4 @@ draft: false
 
 > ## You can find the complete document here: 
 
-> [SRS.pdf](SRS.pdf)
+* [SRS.pdf](SRS.pdf)
