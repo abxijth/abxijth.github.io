@@ -26,4 +26,6 @@ draft: false
 
 ---
 
-## You can find the complete document here: [SRS-MeloFi](/resources/SRS.pdf)
+> ## You can find the complete document here: 
+
+> [SRS.pdf](SRS.pdf)
