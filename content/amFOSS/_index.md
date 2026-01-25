@@ -1,11 +1,11 @@
 ---
-title: "amFOSS"
+title: "amFOSS Journey"
 date: 2025-11-08
 draft: false
 ---
 
 
-INDIA'S LEADING FOSS & COMPUTER SCIENCE CLUB
+India's Leading Foss & Computer Science Club
 
 
 
