@@ -16,7 +16,7 @@ Converted the wireframes from Task 03 into fully designed high-fidelity UI scree
 
 ## Figma Links
 
-[**mobile**](https://www.figma.com/design/JMVdtGsk0F7kYzlEgOpOmc/MeloFi?node-id=0-1&t=yRIyLv65LDAE8aix-1)
+* [**mobile**](https://www.figma.com/design/JMVdtGsk0F7kYzlEgOpOmc/MeloFi?node-id=0-1&t=yRIyLv65LDAE8aix-1)
 
-[**web**](https://www.figma.com/design/mLBYcCEhARLw5ZMAbRGFXI/Melofi--Web-?node-id=0-1&t=oax8fLp7OR0JcrAf-1)
+* [**web**](https://www.figma.com/design/mLBYcCEhARLw5ZMAbRGFXI/Melofi--Web-?node-id=0-1&t=oax8fLp7OR0JcrAf-1)
 
