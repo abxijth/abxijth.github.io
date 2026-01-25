@@ -1,5 +1,5 @@
 ---
-title: "Task 08 — Journey Through the Anveshan Track"
+title: "Task 09 — Journey Through the Anveshan Track"
 date: 2025-11-08
 description: "Final Task — Journey Through the Anveshan Track"
 tags: ["amfoss-anveshan"]
