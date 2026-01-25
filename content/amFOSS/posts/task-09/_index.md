@@ -172,7 +172,7 @@ Even though I couldn’t fully implement Ctrl+C and Ctrl+Z handling, I learned h
 
 ## Key Takeaways From the Journey
 
-* Time management is an important facotor
+* Time management is an important factor
 * Learning is non-linear, and that’s okay
 * Strong foundations matter more than quick results
 * Design, frontend, backend, and systems programming are deeply connected
