@@ -1,6 +1,6 @@
 ---
 title: "Task 02 — SRS "
-date: 2025-11-08
+date: 2025-11-10
 description: "A comprehensive Software Requirements Specification (SRS) document"
 tags: ["amfoss-anveshan"]
 draft: false

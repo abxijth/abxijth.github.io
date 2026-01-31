@@ -8,7 +8,7 @@ draft: false
 
 ## Introduction
 
-This repository marks the final milestone of my journey through the Anveshan Track. What started as a series of individual technical tasks gradually became a holistic learning experience, one that strengthened not only my technical skills, but also my approach to problem-solving, design thinking, and self-discipline.
+This blog post marks the final milestone of my journey through the Anveshan Track. What started as a series of individual technical tasks gradually became a holistic learning experience, one that strengthened not only my technical skills, but also my approach to problem-solving, design thinking, and self-discipline.
 
 Each task pushed me to step slightly outside my comfort zone, explore unfamiliar tools, and reflect on my progress. This README serves as a reflection on that journey: the lessons learned, challenges faced, and growth achieved along the way.
 

@@ -1,6 +1,6 @@
 ---
 title: "Task 03 — Wireframe"
-date: 2025-11-08
+date: 2025-11-11
 description: "Low-Fidelity Wireframes of the MeloFi Music App"
 tags: ["amfoss-anveshan"]
 draft: false
